@@ -14,4 +14,11 @@ public class DemoDao {
 		String sql="select count(*) from Demo";
 		return jdbc.queryForInt(sql);
 	}
+	
+	
+	
+	
+	
+	
+	//仅仅是为了测试
 }
