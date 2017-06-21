@@ -15,4 +15,17 @@ public class ScoreServie {
 	public List<Score> getAll(){
 		return scoreDao.getAll();
 	}
+	public void insertScore(Score score) {
+		scoreDao.insertScore(score);
+	}
+	public Score getScoreById(String sc_Id) {
+		Score score = scoreDao.getScoreById(sc_Id);
+		return score;
+	}
+	public void updateScore(Score score) {
+		scoreDao.updateScore(score);
+	}
+	public void deleteScore(String sc_Id) {
+		scoreDao.deleteScore(sc_Id);
+	}
 }
