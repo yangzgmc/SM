@@ -23,6 +23,7 @@ public class ScoreController {
 	}
 	@RequestMapping("insertScore")
 	public void insertScore(Score score){
+		System.out.println("hhhhhhhhhhh");
 		scoreService.insertScore(score);
 	}
 	//跳转添加页面
