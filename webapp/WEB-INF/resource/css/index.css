@@ -1,0 +1,104 @@
+/*
+*头部样式
+*/
+.header{
+    border-bottom: 1px solid #ccc;
+    height: 80px;
+    background: #343f55;
+    color: #f1eef5;
+}
+
+.header>h2{
+    line-height: 80px;
+    text-align: center;
+    text-indent: 15px;
+}
+
+/*
+* menus样式
+*/
+.aside{
+    background: #314055;
+    height: calc(100% - 50px);
+    display: block;
+    padding: 0;
+}
+.menus{
+    line-height: 36px;
+    font-size: 16px;
+}
+
+.menus li{
+    width: 100%;
+    border-top: 1px solid #3a495e;
+    border-bottom: 1px solid #2f3f56;
+}
+.menus a{
+    color:#b0bdd8;
+    width: 100%;
+    text-align: center;
+    line-height: 48px;
+    display: block;
+}
+
+.currentMenu{
+    background: #2d384c;
+    color:#fff;
+    box-shadow: 0 0 2px rgba(0,0,0,0.3) inset;
+}
+.currentMenu a{
+    color: #fff;
+}
+
+/*
+*每个页面的详细内容
+*/
+.section{
+    padding: 0;
+    height: calc(100% - 50px);
+    background: #e8edf1;
+}
+.title{
+    height: 50px;
+    background: #fff;
+    font-size: 20px;
+    line-height: 50px;
+    border-bottom: 1px solid #f96f4b;
+}
+.title span{
+    display: inline-block;
+    padding: 0 15px;
+    line-height: 44px;
+    border-bottom: 3px solid #f96f4b;
+}
+.table_manage{
+    width: calc(100% - 40px);
+    margin: 20px;
+    background: #f2f7fa;
+    border: 1px solid #ccc;
+}
+.table_manage thead{
+    background: #7f94a9;
+}
+
+.table_manage tbody tr{
+    cursor: pointer;
+}
+.table_manage tbody tr:hover{
+    background: #aab4c1;
+}
+.pageInfo{
+    display: block;
+    line-height: 74px;
+    vertical-align: middle;
+    float: right;
+    padding-right: 15px;
+    color: #666;
+}
+.page .pagination{
+    vertical-align: middle;
+    float: right;
+    padding-right: 20px;
+}
+/*学生管理*/
+

@@ -1,0 +1,14 @@
+/*公共部分*/
+div,body,h1,h2,h3,h4,h5,h6,p,span,form,input,select,table,ul,li,a{margin: 0;padding: 0;outline: none;}
+img{border:none}
+a{text-decoration: none;color: #000;outline:none;}
+a:hover{text-decoration: none;}
+a:link,a:visited{text-decoration:none;}
+h1,h2,h3,h4,h5,h6{font-weight: normal}
+textarea{resize:none;}
+li{list-style: none}
+html,body{width: 100%;height: 100%;}
+body{font-family: "微软雅黑";font-size: 14px;}
+.l_float{float: left}
+.r_float{float: right}
+.clear{clear: both;}
