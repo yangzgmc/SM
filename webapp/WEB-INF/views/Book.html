@@ -1,0 +1,28 @@
+<h4 class="title">
+    <span>推荐书籍</span>
+</h4>
+<table class="table table-striped table_manage" ng-controller='BookController'>
+    <thead>
+        <tr>
+            <td>编号</td>
+            <td>班级</td>
+            <td>书名</td>
+            <td>作者</td>
+            <td>出版社</td>
+            <td>简介</td>
+            <td>图片</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="book in books">
+            <td>{{book.bk_id}}</td>
+            <td>{{book.bk_class_id}}</td>
+            <td>{{book.bk_name}}</td>
+            <td>{{book.bk_author}}</td>
+            <td>{{book.bk_address}}</td>
+            <td>{{book.bk_summary}}</td>
+            <td>{{book.bk_image}}</td>
+            <td>修改  删除</td>
+        </tr>
+    </tbody>
+</table>

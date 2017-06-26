@@ -1,0 +1,25 @@
+<h4 class="title">
+    <span>课程管理</span>
+</h4>
+<table class="table table-striped table_manage" ng-controller='CourseController'>
+    <thead>
+        <tr>
+            <td>编号</td>
+            <td>科目</td>
+            <td>时间</td>
+            <td>星期</td>
+            <td>班级</td>
+            <td>操作</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="course in courses">
+            <td>{{course.pro_Id}}</td>
+            <td>{{course.pro_Name}}</td>
+            <td>{{course.pro_Date}}</td>
+            <td>{{course.pro_Week}}</td>
+            <td>{{course.pro_Class_Id}}</td>
+            <td>修改  删除</td>
+        </tr>
+    </tbody>
+</table>

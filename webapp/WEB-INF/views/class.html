@@ -1,0 +1,22 @@
+<h4 class="title">
+    <span>班级管理</span>
+</h4>
+<table class="table table-striped table_manage" ng-controller='ClassController'>
+    <thead>
+        <tr>
+            <td>编号</td>
+            <td>名称</td>
+            <td>位置</td>
+            <td>班主任</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="class in classes">
+            <td>{{class.cl_id}}</td>
+            <td>{{class.cl_name}}</td>
+            <td>{{class.cl_address}}</td>
+            <td>{{class.cl_tc_id}}</td>
+            <td>修改  删除</td>
+        </tr>
+    </tbody>
+</table>

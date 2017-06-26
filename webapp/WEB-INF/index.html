@@ -1,0 +1,44 @@
+<!-- <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%> -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>中小学管理系统V1</title>
+		<link href="resource/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+		<link type="text/css" rel="stylesheet" href="resource/css/public.css">
+		<link type="text/css" rel="stylesheet" href="resource/css/index.css">
+		<script src="resource/lib/angular/angular.min.js"></script>
+		<script src="resource/lib/angular-route/angular-route.min.js"></script>
+		<script>
+			var app = angular.module("app", ["ngRoute"]);
+		</script>
+		<script src="resource/app/js/repo/menus.js"></script>
+		<script src="resource/app/js/controller/menuController.js"></script>
+		<script src="resource/app/js/routes/routes.js"></script>
+		<script src="resource/app/js/controller/StudentController.js"></script>
+		<script src="resource/app/js/controller/TeacherController.js"></script>
+		<script src="resource/app/js/controller/ClassController.js"></script>
+		<script src="resource/app/js/controller/BookController.js"></script>
+		<script src="resource/app/js/controller/CourseController.js"></script>
+		<script src="resource/app/js/controller/ParentController.js"></script>
+		<script src="resource/app/js/controller/NewsController.js"></script>
+		<script src="resource/app/js/controller/PayController.js"></script>
+		<script src="resource/app/js/controller/ScoreController.js"></script>
+	</head>
+<body ng-app="app">
+	<nav class="header">
+			<h2>中小学生管理系统</h2>
+	</nav>
+	<aside class="col-sm-2 aside" ng-controller="menuCtrl">
+		<ul class="menus">
+			<li ng-repeat="menu in menus" ng-click="getCurrentMenu(menu)"
+			ng-class="menu.menu == currentMenu?'currentMenu':''">
+				<a href="{{menu.route}}">{{menu.menu}}</a>
+			</li>
+		</ul>
+	</aside>
+	<section class="col-sm-10 section">
+		<ng-view></ng-view>
+	</section>
+</body>
+</html>

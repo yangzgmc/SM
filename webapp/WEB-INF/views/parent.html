@@ -1,0 +1,27 @@
+<h4 class="title">
+    <span>家长学习</span>
+</h4>
+<table class="table table-striped table_manage" ng-controller='ParentController'>
+    <thead>
+        <tr>
+            <td>编号</td>
+            <td>标题</td>
+            <td>内容</td>
+            <td>时间</td>
+            <td>分类</td>
+            <td>年级</td>
+            <td>操作</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="parent in parents">
+            <td>{{parent.stu_Id}}</td>
+            <td>{{parent.stu_Title}}</td>
+            <td>{{parent.stu_Content}}</td>
+            <td>{{parent.stu_Date}}</td>
+            <td>{{parent.stu_Type}}</td>
+            <td>{{parent.stu_Age}}</td>
+            <td>修改  删除</td>
+        </tr>
+    </tbody>
+</table>
