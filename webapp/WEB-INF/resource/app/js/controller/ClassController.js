@@ -1,10 +1,10 @@
 app.controller('ClassController',['$scope',function($scope){
     $scope.classes = [
-      {id:2017010101,name:'周杰伦',sex:'男',age:39,hostel:'203',address:'河北邯郸',phone:1234567890,teacher:'李荣浩',class:'四年级'},
-      {id:2017010102,name:'周杰伦',sex:'男',age:39,hostel:'203',address:'河北邯郸',phone:1234567890,teacher:'李荣浩',class:'四年级'},
-      {id:2017010103,name:'周杰伦',sex:'男',age:39,hostel:'203',address:'河北邯郸',phone:1234567890,teacher:'李荣浩',class:'四年级'},
-      {id:2017010104,name:'周杰伦',sex:'男',age:39,hostel:'203',address:'河北邯郸',phone:1234567890,teacher:'李荣浩',class:'四年级'},
-      {id:2017010105,name:'周杰伦',sex:'男',age:39,hostel:'203',address:'河北邯郸',phone:1234567890,teacher:'李荣浩',class:'四年级'},
-      {id:2017010106,name:'周杰伦',sex:'男',age:39,hostel:'203',address:'河北邯郸',phone:1234567890,teacher:'李荣浩',class:'四年级'}
+      {cl_id:2017010102,cl_name:'周杰伦',cl_address:'男',cl_tc_id:'39'},
+      {cl_id:2017010103,cl_name:'周杰伦',cl_address:'男',cl_tc_id:'39'},
+      {cl_id:2017010104,cl_name:'周杰伦',cl_address:'男',cl_tc_id:'39'},
+      {cl_id:2017010101,cl_name:'周杰伦',cl_address:'男',cl_tc_id:'39'},
+      {cl_id:2017010105,cl_name:'周杰伦',cl_address:'男',cl_tc_id:'39'},
+      {cl_id:2017010106,cl_name:'周杰伦',cl_address:'男',cl_tc_id:'39'}
     ];
 }]);

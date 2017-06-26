@@ -6,27 +6,28 @@
         <tr>
             <td>编号</td>
             <td>姓名</td>
-            <td>性别</td>
-            <td>家庭住址</td>
-            <td>班级</td>
-            <td>宿舍</td>
-            <td>联系方式</td>
             <td>年龄</td>
-            <td>班主任</td>
-            <td>操作</td>
+            <td>教龄</td>
+            <td>座右铭</td>
+            <td>头像</td>
+            <td>职务</td>
+            <td>班级</td>
+            <td>联系方式</td>
+            <td>家庭住址</td>
         </tr>
     </thead>
     <tbody>
         <tr ng-repeat="teacher in teachers">
-            <td>{{teacher.id}}</td>
-            <td>{{teacher.name}}</td>
-            <td>{{teacher.sex}}</td>
-            <td>{{teacher.address}}</td>
-            <td>{{teacher.class}}</td>
-            <td>{{teacher.hostel}}</td>
-             <td>{{teacher.phone}}</td>
-            <td>{{teacher.age}}</td>
-            <td>{{teacher.teacher}}</td>
+            <td>{{teacher.tc_id}}</td>
+            <td>{{teacher.tc_name}}</td>
+            <td>{{teacher.tc_age}}</td>
+            <td>{{teacher.tc_sage}}</td>
+            <td>{{teacher.tc_motto}}</td>
+            <td>{{teacher.tc_image}}</td>
+             <td>{{teacher.tc_post}}</td>
+            <td>{{teacher.tc_class}}</td>
+            <td>{{teacher.tc_telephone}}</td>
+            <td>{{teacher.tc_address}}</td>
             <td>修改  删除</td>
         </tr>
     </tbody>
