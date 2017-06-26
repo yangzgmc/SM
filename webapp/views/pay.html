@@ -1,0 +1,27 @@
+<h4 class="title">
+    <span>缴费管理</span>
+</h4>
+<table class="table table-striped table_manage" ng-controller='PayController'>
+    <thead>
+        <tr>
+            <td>编号</td>
+            <td>学生ID</td>
+            <td>时间</td>
+            <td>备注</td>
+            <td>金额</td>
+            <td>操作人</td>
+            <td>操作</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="pay in pays">
+            <td>{{pay.pay_Id}}</td>
+            <td>{{pay.pay_St_Id}}</td>
+            <td>{{pay.pay_Date}}</td>
+            <td>{{pay.pay_Remarks}}</td>
+            <td>{{pay.pay_Type}}</td>
+            <td>{{pay.pay_Tc_Id}}</td>
+            <td>修改  删除</td>
+        </tr>
+    </tbody>
+</table>

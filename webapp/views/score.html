@@ -1,0 +1,41 @@
+<h4 class="title">
+    <span>学习成绩</span>
+</h4>
+<table class="table table-striped table_manage" ng-controller='ScoreController'>
+    <thead>
+        <tr>
+            <td>编号</td>
+            <td>学生ID</td>
+            <td>时间</td>
+            <td>目录</td>
+            <td>语文</td>
+            <td>数学</td>
+            <td>外语</td>
+            <td>政治</td>
+            <td>地理</td>
+            <td>生物</td>
+            <td>历史</td>
+            <td>总分</td>
+            <td>操作人</td>
+            <td>操作</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="score in scores">
+            <td>{{score.sc_Id}}</td>
+            <td>{{score.sc_Su_Id}}</td>
+            <td>{{score.sc_Date}}</td>
+            <td>{{score.sc_Ls_Id}}</td>
+            <td>{{score.sc_Chinese}}</td>
+            <td>{{score.sc_Math}}</td>
+            <td>{{score.sc_English}}</td>
+            <td>{{score.sc_Politics}}</td>
+            <td>{{score.sc_Geography}}</td>
+            <td>{{score.sc_Biology}}</td>
+            <td>{{score.sc_History}}</td>
+            <td>{{score.sc_All}}</td>
+            <td>{{score.sc_Tc_Id}}</td>
+            <td>修改  删除</td>
+        </tr>
+    </tbody>
+</table>
